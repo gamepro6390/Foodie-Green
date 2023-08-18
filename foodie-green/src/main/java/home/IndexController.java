@@ -2,19 +2,20 @@ package home;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class IndexController {
 	
 	@Autowired
-	HomeService service;
+	HomeService homeservice;
 	
-	@RequestMapping("/main")
-	public String Main() {
-		return "/home/body"; 
+
+	@RequestMapping("/")
+	public String index() {
+		return "/home/index"; 
 	}
-	
 
 	
 }

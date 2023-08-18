@@ -6,8 +6,8 @@
 	<!-- <settings> <setting name="logImpl" value="LOG4J"/> </settings> -->
 
 	<typeAliases>
-		<typeAlias type="user.UserDTO" alias="UserDTO" />
-	
+		<typeAlias type="home.HomeDTO" alias="HomeDTO" />
+
 	</typeAliases>
 
 </configuration>
