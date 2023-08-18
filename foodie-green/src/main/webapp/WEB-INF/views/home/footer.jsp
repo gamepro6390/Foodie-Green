@@ -51,7 +51,7 @@
 		</div>
 
 		<div class="footer-menu2">
-			<a href=""><img src="favicon.png" alt="로고 이미지" class="favicon"></a>
+			<a href=""><img src="/img/favicon.png" alt="로고 이미지" class="favicon"></a>
 			<p style="font-size:14px;">상호명 : 주식회사 대화가필요해 | 대표 : 신장훈 | 사업자등록번호 : 000-00-00000 | 소재지 : 서울특별시 영등포구 양평로 302,
 				5층(양평동5가)<br>
 				통신판매업 신고번호 : 2023-화성서부-0300 | 제휴 및 납품 문의 : jang@foodieandgreen.co.kr</p>
@@ -59,8 +59,8 @@
 			<span><a href="">개인정보 처리방침</a></span>
 			<span>Copyright ⓒ 2023 주식회사 대화가필요해 All rights reserved.</span>
 			<span style="width:200px;"></span>
-			<span><a href=""><img src="../img/home/instagram.png" alt="인스타그램" class="sns-icon01"></a></span>
-			<span><a href=""><img src="../img/home/Twitter X.png" alt="트위터" class="sns-icon02"></a></span>
+			<span><a href=""><img src="/img/instagram.png" alt="인스타그램" class="sns-icon01"></a></span>
+			<span><a href=""><img src="/img/Twitter X.png" alt="트위터" class="sns-icon02"></a></span>
 		</div>
 
 	</footer>
