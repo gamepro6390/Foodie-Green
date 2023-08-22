@@ -7,9 +7,11 @@
 
 	<typeAliases>
 		<typeAlias type="user.UserDTO" alias="UserDTO" />
+		<typeAlias type="user.UserDiaryDTO" alias="UserDiaryDTO" />
 		<typeAlias type="recipes.DiaryDTO" alias="DiaryDTO" />
+		<typeAlias type="recipes.RecipesDTO" alias="RecipesDTO" />
 		<typeAlias type="home.HomeDTO" alias="HomeDTO" />
-		<typeAlias type="recipes.DiaryDTO" alias="DiaryDTO" />
+		<typeAlias type="recipes.LikesDTO" alias="LikesDTO" />
 		<typeAlias type="store.StoreDTO" alias="Storedto" />
 	</typeAliases>
 

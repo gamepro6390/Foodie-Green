@@ -37,7 +37,7 @@ public class LoginService {
 	        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
 	        String sb = "grant_type=authorization_code" +
 	                "&client_id=21d333f51716aa48fde19c2d05a54724" + // REST_API_KEY
-	                "&redirect_uri=http://localhost:8080/login_kakao" + // REDIRECT_URI
+	                "&redirect_uri=http://localhost:8888/login_kakao" + // REDIRECT_URI
 	                "&code=" + code;
 	        bufferedWriter.write(sb);
 	        bufferedWriter.flush();
@@ -96,11 +96,11 @@ public class LoginService {
 	        System.out.println("response body : " + result);
 
 	        JsonElement element = JsonParser.parseString(result.toString());
-	        JsonObject properties = element.getAsJsonObject().get("properties").getAsJsonObject();
 	        JsonObject kakaoAccount = element.getAsJsonObject().get("kakao_account").getAsJsonObject();
-
-	        String nickname = properties.getAsJsonObject().get("nickname").getAsString();
+	        JsonObject properties = element.getAsJsonObject().get("properties").getAsJsonObject();
+	        
 	        String email = kakaoAccount.getAsJsonObject().get("email").getAsString();
+	        String nickname = properties.getAsJsonObject().get("nickname").getAsString();
 
 	        userInfo.put("nickname", nickname);
 	        userInfo.put("email", email);
